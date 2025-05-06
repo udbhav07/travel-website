@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewpoint" content="width=device-width , initial-scale=1.0" />
-        <title>Travel website</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    </head>
-    <body>
-        <script src="js/script.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Travel website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="./images/logo.png.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">contact</a></li>
+    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="side-container swiper">
+            <div class="slide-content swiper-wrapper" >
+                <div class="overlay swiper-slide">
+                    <img src="./images/show-case-1.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>lets travel the world with us</p>
+                        <h2><span>Discover</span> The world</h2>
+                        <h2>With our guide</h2>
+                    </div>
+                </div>
+                <div class="overlay swiper-slide">
+                    <img src="./images/show-case-2.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>lets travel the world with us</p>
+                        <h2><span>Discover</span> The world</h2>
+                        <h2>With our guide</h2>
+                    </div>
+                </div>
+                <div class="overlay swiper-slide">
+                    <img src="./images/show-case-3.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>lets travel the world with us</p>
+                        <h2><span>Discover</span> The world</h2>
+                        <h2>With our <span>Travelo</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
