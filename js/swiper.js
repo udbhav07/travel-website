@@ -11,4 +11,11 @@ const swiper= new Swiper('.swiper',{
     },
     loop:true,
     direction:"horizontal",
-})
+
+    autoplay:{
+        delay:2000,
+    },
+
+    speed:400,
+    spaceBetween:100,
+});
