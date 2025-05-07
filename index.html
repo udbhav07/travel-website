@@ -19,6 +19,9 @@
                     <img src="./images/logo.png.png" alt="">
                 </div>
                 <ul>
+                    <div class="btn">
+                        <i class="fas fa-times close-btn"></i>
+                    </div>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Tours</a></li>
@@ -27,6 +30,9 @@
                     <li><a href="#">contact</a></li>
     
                 </ul>
+                <div class="btn">
+                    <i class="fas fa-bars close-btn"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -63,6 +69,33 @@
         </div>
     </main>
 
+
+    <!--=================search location start================-->
+    <section id="location-search">
+        <div class="container">
+            <div class="form-wrapper">
+                <form actiion="#">
+                    <input type="text" placeholder="where to?" class="form-control">
+                    <select class="form-control">
+                        <option value="Destination">Destination</option>
+                        <option value="Destination">Delhi</option>
+                        <option value="Destination">Jaipur</option>
+                        <option value="Destination">Manali</option>
+                        <option value="Destination">Kerala</option>
+                    </select>
+                    <select class="form-control">
+                        <option value="duration">Duration</option>
+                        <option value="day-1">1 day tour</option>
+                        <option value="2-4 days">2-4 days tour</option>
+                        <option value="5-7 days">5-7 days tour</option>
+                        <option value="7+ days">7+ days tour</option>
+                    </select>
+                    <button type="button" class="primary-btn">search now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--=================search location end================-->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
