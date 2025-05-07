@@ -89,7 +89,19 @@
         gap: 1rem;
     }
 
-    form button{
+    .about-content-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
 
+    .agency-right-side .img img{
+        width: 95%;
+    }
+
+    .agency-right-side .img::after{
+        top:15px;
+        left: 15px;
+        bottom: 0;
+        right: 0;
+        width: 90%;
     }
 }
