@@ -20,3 +20,25 @@ window.addEventListener("scroll",()=>{
     }
 
 })
+
+//animate static icon numbers
+
+const counterEL = document.querySelectorAll(".number");
+
+counterEL.forEach((counter) => {
+    counter.textContent = "0";
+    const updateCounter = () => {
+        const dataCeil = +counter.getAttribute("data-Ceil");
+        let currentNum = +counter.textContent;
+        const increment = Math.ceil(dataCeil / 25);
+
+        if (currentNum < dataCeil) {
+            counter.textContent = `${Math.min(currentNum + increment, dataCeil)}`;
+            setTimeout(updateCounter, 80);
+        } else {
+            counter.textContent = `${dataCeil}`; 
+        }
+    };
+
+    updateCounter();
+});
