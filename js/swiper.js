@@ -36,5 +36,21 @@ const swiper2= new Swiper('.swiper2',{
     },
 
     speed:400,
-    spaceBetween:100,
+
+    breakpoints:{
+        320:{
+            slidesPerView:1,
+        },
+
+        768:{
+            slidesPerView:2,
+        },
+        
+        640:{
+            slidesPerView:3,
+        },
+
+    }
+
+
 });
