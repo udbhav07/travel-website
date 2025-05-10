@@ -115,11 +115,43 @@
         grid-template-columns: 1fr;
     }
 
-    .img-content{
+    .img-content {
         bottom: 10px;
     }
 
-    .static-wrapper{
-        grid-template-columns: repeat(2,1fr);
+    .static-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* footer */
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-wraper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .subscribe button {
+       
+        top: 31%;
+        right: 3%;
+        
+    }
+}
+
+@media(max-width:645px){
+    html{
+        font-size:14px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-wraper {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
