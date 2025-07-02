@@ -28,7 +28,7 @@ const counterEL = document.querySelectorAll(".number");
 counterEL.forEach((counter) => {
     counter.textContent = "0";
     const updateCounter = () => {
-        const dataCeil = +counter.getAttribute("data-Ceil");
+        const dataCeil = +counter.getAttribute("data-Ceil");//+ converts string to num
         let currentNum = +counter.textContent;
         const increment = Math.ceil(dataCeil / 25);
 
